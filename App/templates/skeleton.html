@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {% block head %}
+        <meta charset="utf-8" />
+        <title>Adela</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/skeleton.css') }}">
+    {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+            <div class="header">
+                <div class="trianglecorner"></div>
+                <h1>Adela</h1>
+                <p>La Data, poil aux bras</p>
+            </div>
+             <div id="navbar">
+                <a href="/">Présentation</a>
+                <a href="/charte">Charte et objectifs</a>
+                <a href="/projets">Projets</a>
+                <a href="/openData">Rechercher un jeu de donnée</a>
+                <a href="/contact">Nous contacter</a>
+            </div>
+        {% endblock %}
+        <section>
+            {% block corps %}
+            {% endblock %}
+        </section>
+        {% block footer %}
+            <footer>
+                Copyright monsite.fr 2009-2012
+            </footer>
+        {% endblock %}
+    </body>
+    {% block script %}
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+    {% endblock %}
+</html>

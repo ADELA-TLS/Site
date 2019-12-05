@@ -1,0 +1,63 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/projets.css') }}">
+{% endblock %}
+
+{% block header %}
+    {{ super() }}
+    <div class="recherche">
+        <input type="search" id="site-search" name="q" aria-label="Search through site content" value="Recherche">
+        <button>Search</button>
+    </div>
+{% endblock %}
+
+{% block corps %}
+    <a href="ilotfraicheur">
+        <article class="projectArticle">
+            <div class="titleProjectArticle">
+                <h2>Ilot de chaleur</h2>
+            </div>
+            <div class="pictureAndDescriptionArticle">
+                <div class="pictureProjectArticle">
+               <img src="{{url_for('static', filename='img/ilot_chaleur.jpg')}}">
+               </div>
+                <div class="descriptionProjectArticle">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="ressourceArticle">
+                <a href="/">Ressources</a>
+            </div>
+        </article>
+    </a>
+    <a href="ilotfraicheur">
+        <article class="projectArticle">
+            <div class="titleProjectArticle">
+                <h2>POC : Visualisation météo</h2>
+            </div>
+            <div class="pictureAndDescriptionArticle">
+                <div class="pictureProjectArticle">
+               <img src="{{url_for('static', filename='img/meteo-visu.jpg')}}">
+               </div>
+                <div class="descriptionProjectArticle">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="ressourceArticle">
+                <a href="/">Ressources</a>
+            </div>
+        </article>
+    </a>
+{% endblock %}

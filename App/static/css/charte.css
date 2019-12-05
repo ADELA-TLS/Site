@@ -1,0 +1,7 @@
+.article{
+  height: 250px;
+  margin-block: 10px;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 10px;
+}

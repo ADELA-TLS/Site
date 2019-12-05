@@ -1,0 +1,44 @@
+{% extends "skeleton.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/charte.css') }}">
+{% endblock %}
+
+{% block corps %}
+<div class="valeurs">
+    <h2>Valeurs</h2>
+</div>
+<article>
+    <h3>Neutralité et intégrité</h3>
+    <ul>
+        <li>La falsification des données est évidemment prohibé.</li>
+        <li>La rigueur de notre travail se doit d'être le plus proche possible de celle d'une démarche scientifique, aussi bien dans la justesse des procédés utilisées que dans l'observation et la correction de nos propres biais.<li>
+        <li>Nos analyses n'ont pas pour but de donner des chiffres pour appuyer un argument mais bel et bien de vérifier la pertinence de celui-ci.</li>
+        <li>Notre travail consiste à fournir des outils d'aide à la décision, nous sommes responsable de la qualité de ceux-ci mais pas des décisions prises avec.</li>
+    </ul>
+</article>
+<article>
+    <h3>Communication et transparence</h3>
+    <ul>
+        <li>Nous avons le devoir de s'assurer de la bonne compréhension de notre méthode avec nos interlocuteurs.</li>
+        <li>Nos méthodes, codes ,et données sont disponible à tous. Permettant à n'importe qui de pouvoir reproduire nos résultats. De plus chaque critique pertinente sera dans la mesure du possible prise en compte.</li>
+        <li>Transparence de nos source de données et devoir d'avoir un regard critique sur celle-ci</li>
+    </ul>
+</article>
+<article>
+    <h3>Vis à vis des bénévoles</h3>
+    <ul>
+        <li>Respect des envies de chacun que ce soit dans la quantité d'investissement ou dans les choix des sujets à traiter dans la limite des objectifs affichés de l'association</li>
+        <li>Le travail associatif ne doit pas être une charge, nous somme réunis avant tout pour le plaisir de partager nos compétences en data science</li>
+    </ul>
+</article>
+<h2>Objectifs</h2>
+<article>
+    <ul>
+        <li>Traiter des données pour d'autres associations ou collectifs à but non lucratifs</li>
+        <li>Creation d'outils pour d'explorer les Open Data, permettant de s'informer directement à partir de la donnée et faire du fact checking</li>
+        <li>Vulgarisation de la data science</li>
+    </ul>
+</article>
+{% endblock %}
